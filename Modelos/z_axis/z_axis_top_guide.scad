@@ -1,15 +1,15 @@
 
-RODAM_DIAM              = 20;
-RODAM_DIST_PERFIL       = 15;
+RODAM_DIAM              = 16+1;
+RODAM_DIST_PERFIL       = 21;
 
-PERF_RANURA_ANCHO       = 5;
+PERF_RANURA_ANCHO       = 6.3-0.5;
 PERF_RANURA_PROF        = 5;
 
 SOP_PARED_ESP           = 3;
 SOP_ANCHO               = 35;
 SOP_ALTO                = 20;
 SOP_GUIA_RANURA_ANCHO   = SOP_ANCHO/4;
-SOP_TORN_DIAM           = 4;
+SOP_TORN_DIAM           = 4+.8;
 
 
 module zAxisTopGuide()
