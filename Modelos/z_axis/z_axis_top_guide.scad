@@ -1,8 +1,8 @@
 
-RODAM_DIAM              = 16+1;
-RODAM_DIST_PERFIL       = 21;
+RODAM_DIAM              = 16+0.2;
+RODAM_DIST_PERFIL       = 21-RODAM_DIAM/2;
 
-PERF_RANURA_ANCHO       = 6.3-0.5;
+PERF_RANURA_ANCHO       = 6.3;
 PERF_RANURA_PROF        = 5;
 
 SOP_PARED_ESP           = 3;
