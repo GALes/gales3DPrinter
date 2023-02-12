@@ -26,21 +26,19 @@ module adaptador()
                 ADAPTADOR_ALTO
             ]);
         }
-        color("red", 0.5) {
-            cylinder(h=50, d=BASE_Z_DIAM_AGUJ);
-            translate([(CAMA_CALIENTE_DIST_AGUJ/2)-(BASE_Z_DIST_AGUJ/2), (CAMA_CALIENTE_DIST_AGUJ/2)-(BASE_Z_DIST_AGUJ/2)]) {
-                cylinder(h=50, d=CAMA_CALIENTE_DIAM_AGUJ);
-                cylinder(h=CAMA_CALIENTE_TUER_ALTO, d=CAMA_CALIENTE_TUER_DIAM, $fn=6);
-            }
-            translate([-CAMA_CALIENTE_MARGEN*2, -CAMA_CALIENTE_MARGEN*2, ADAPTADOR_ALTO-CAMA_CALIENTE_ALTO])
-                cube([
-                    (CAMA_CALIENTE_DIST_AGUJ/2)-(BASE_Z_DIST_AGUJ/2) + CAMA_CALIENTE_MARGEN *3,
-                    (CAMA_CALIENTE_DIST_AGUJ/2)-(BASE_Z_DIST_AGUJ/2) + CAMA_CALIENTE_MARGEN *3,
-                    10
-                ]);
-        color("blue") translate([0,0,ADAPTADOR_ALTO-CAMA_CALIENTE_ALTO-BASE_Z_CAB_TOR_ALTO/2]) rotate([0,0,45])
-            cube([BASE_Z_DIAM_AGUJ, BASE_Z_CAB_TOR_DIAM, BASE_Z_CAB_TOR_ALTO], center=true);
+        #cylinder(h=50, d=BASE_Z_DIAM_AGUJ);
+        translate([(CAMA_CALIENTE_DIST_AGUJ/2)-(BASE_Z_DIST_AGUJ/2), (CAMA_CALIENTE_DIST_AGUJ/2)-(BASE_Z_DIST_AGUJ/2)]) {
+            #cylinder(h=50, d=CAMA_CALIENTE_DIAM_AGUJ);
+            #cylinder(h=CAMA_CALIENTE_TUER_ALTO, d=CAMA_CALIENTE_TUER_DIAM, $fn=6);
         }
+        translate([-CAMA_CALIENTE_MARGEN*2, -CAMA_CALIENTE_MARGEN*2, ADAPTADOR_ALTO-CAMA_CALIENTE_ALTO])
+            #cube([
+                (CAMA_CALIENTE_DIST_AGUJ/2)-(BASE_Z_DIST_AGUJ/2) + CAMA_CALIENTE_MARGEN *3,
+                (CAMA_CALIENTE_DIST_AGUJ/2)-(BASE_Z_DIST_AGUJ/2) + CAMA_CALIENTE_MARGEN *3,
+                10
+            ]);
+        translate([0,0,ADAPTADOR_ALTO-CAMA_CALIENTE_ALTO-BASE_Z_CAB_TOR_ALTO/2]) rotate([0,0,45])
+            #cube([BASE_Z_DIAM_AGUJ, BASE_Z_CAB_TOR_DIAM, BASE_Z_CAB_TOR_ALTO], center=true);
     }
 }
 
