@@ -2,8 +2,8 @@ $fn=30;
 
 ALTO            = 25;
 DIAMETRO        = 23;
-MOTOR_EJE_DIAM  = 4.5;
-VARILLA_DIAM    = 8;
+MOTOR_EJE_DIAM  = 4.3;
+VARILLA_DIAM    = 8.3;
 
 TORNILLO_DIAM   = 3.2;
 TORNILLO_LARGO  = DIAMETRO;
