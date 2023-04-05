@@ -1,0 +1,23 @@
+Configuracion inicial de la Estructura BIQU con la electronica y extrusor de la PrusaI2 Servo
+
+SENDING:M503
+echo:; Linear Units:
+echo:  G21 ; (mm)
+echo:; Temperature Units:
+echo:  M149 C ; Units in Celsius
+echo:; Filament settings (Disabled):
+echo:  M200 S0 D1.75
+echo:; Steps per unit:
+echo:  M92 X19.69 Y19.69 Z153.85 E17.80
+echo:; Max feedrates (units/s):
+echo:  M203 X300.00 Y300.00 Z1.00 E36.29
+echo:; Max Acceleration (units/s2):
+echo:  M201 X5000.00 Y5000.00 Z100.00 E1000.00
+echo:; Acceleration (units/s2) (P<print-accel> R<retract-accel> T<travel-accel>):
+echo:  M204 P1500.00 R2000.00 T3000.00
+echo:; Advanced (B<min_segment_time_us> S<min_feedrate> T<min_travel_feedrate> J<junc_dev>):
+echo:  M205 B20000.00 S0.00 T0.00 J0.01
+echo:; Home offset:
+echo:  M206 X0.00 Y0.00 Z0.00
+echo:; Hotend PID:
+echo:  M301 P25.00 I0.50 D150.00
